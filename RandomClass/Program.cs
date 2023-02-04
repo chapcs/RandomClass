@@ -13,6 +13,7 @@
             //Parse and loop utilized from PickRandomCards
             if (int.TryParse(line, out int n))
             {
+                //original location of random class
                 double[] randomDoubles = new double[n];
                 for (int i = 0; i < randomDoubles.Length; i++)
                 {
