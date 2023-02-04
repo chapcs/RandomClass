@@ -1,6 +1,6 @@
 ﻿internal class Program
 {
-
+    static Random random = new Random();
     private static void Main(string[] args)
     {
         Console.Write("Type the number of doubles to generate: ");
@@ -13,7 +13,6 @@
             //Parse and loop utilized from PickRandomCards
             if (int.TryParse(line, out int n))
             {
-                Random random = new Random();
                 double[] randomDoubles = new double[n];
                 for (int i = 0; i < randomDoubles.Length; i++)
                 {
